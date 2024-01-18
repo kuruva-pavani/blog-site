@@ -6,7 +6,7 @@ var _ = require("lodash");
 const mongoose = require("mongoose");
 
 // Use the new URL parser and remove deprecated options
-mongoose.connect("mongodb+srv://pavani:kuruva2109pavani@cluster0.xmhtq.mongodb.net/postsDB");
+mongoose.connect("mongodb+srv://pavani:kuruva2109pavani@cluster0.xmhtq.mongodb.net/postsDB" || "mongodb://localhost:27017/postsDB");
 
 const postSchema = new mongoose.Schema({
   title: String,
